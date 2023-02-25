@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign in Page</title>
+    <link rel="stylesheet" href="a1.css">
+
+    
+    <script>
+    function validateform()  
+    {  
+    var x=document.myform.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+    return false; 
+  }  
+  else if(myform.indexOf.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+
+</script>  
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+<form action="index2.html">
+    <div class="container">
+        <h1>Sign In</h1>
+        <div class="form" method="post" >
+            <input  style="color:aliceblue" type="email" placeholder="Email or phone number">
+            <input style="color:aliceblue"type="password" placeholder="Password">
+            <input type="submit" value="Sign In" onclick="validateform()">
+            <input type="checkbox">
+            <label>Remember me</label>
+            <a href="#">Need help?</a>
+        </div>
+        <div class="content">
+            <h2>New account? <a href="https://accounts.google.com/v3/signin/identifier?dsh=S822773631%3A1677313735319090&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHesJTzpZJXxkzvgX01usPS78NFQTwxoiWss8ENVhi3j5_HQh7zUdLdQ7TeC-U_V6p0MM23USQ">Sign up now.</a> </h2> <br>
+        </div>
+        </form>
+    </div>
+   
+</body>
+</html>
